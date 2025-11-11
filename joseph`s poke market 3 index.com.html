@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph's Poke Market</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcb05;
+            padding: 20px;
+            color: #2a75bb;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+        .card p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #2a75bb;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>Joseph's Poke Market</header>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/200x280?text=Charizard" alt="Charizard">
+            <h3>Charizard</h3>
+            <p>$50</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x280?text=Pikachu" alt="Pikachu">
+            <h3>Pikachu</h3>
+            <p>$20</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x280?text=Bulbasaur" alt="Bulbasaur">
+            <h3>Bulbasaur</h3>
+            <p>$15</p>
+        </div>
+        <!-- Add more cards here -->
+    </div>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph’s Poké Market</title>
+
+  <!-- ✅ SEO & Social Preview -->
+  <meta name="description" content="Joseph’s Poké Market — a playful Pokémon card trading shop with XP, levels, and fun interactions!" />
+  <meta property="og:title" content="Joseph’s Poké Market" />
+  <meta property="og:description" content="Buy and trade Pokémon cards in a colorful gamified experience." />
+  <meta property="og:image" content="https://example.com/preview-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/josephspokemarket" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Joseph’s Poké Market" />
+  <meta name="twitter:description" content="Buy, collect, and trade Pokémon cards with XP rewards!" />
+  <meta name="twitter:image" content="https://example.com/preview-image.png" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #F6F8FC;
+      color: #1A1A1A;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+      border-bottom: 2px dashed #ccc;
+    }
+
+    /* Logo */
+    #logo {
+      background: linear-gradient(135deg, #A6D3FF, #F6F8FC);
+      padding: 60px 20px;
+    }
+    #logo h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      color: #3B4CCA;
+      margin-top: 20px;
+    }
+    .pokeball-bag {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      position: relative;
+      animation: bounce 1.2s ease-in-out infinite, spin 4s linear infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .pokeball-top {
+      width: 120px;
+      height: 60px;
+      background: #FF1C1C;
+      border-radius: 60px 60px 0 0;
+    }
+    .pokeball-bottom {
+      width: 120px;
+      height: 60px;
+      background: #FFF;
+      border-radius: 0 0 60px 60px;
+      position: relative;
+      top: -4px;
+    }
+    .pokeball-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #1A1A1A;
+    }
+    .bag-handle {
+      position: absolute;
+      top: -20px;
+      left: 35px;
+      width: 50px;
+      height: 20px;
+      border: 4px solid #FFD700;
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+    }
+
+    /* Headings */
+    .section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #FF1C1C;
+      margin-bottom: 20px;
+    }
+
+    /* Cards */
+    .carousel {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 150px;
+      height: 220px;
+      background: linear-gradient(135deg, #FF1C1C, #FFA500);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card.selected { box-shadow: 0 0 20px #FFD700; }
+
+    /* Buttons */
+    .buy { background: #FF1C1C; color: white; border: none; border-radius: 10px; padding: 10px 20px; margin: 10px; cursor: pointer; }
+    .trade { background: #FFD700; color: #1A1A1A; border: none; border-radius: 10px; padding: 10px 20px; margin: 10px; cursor: pointer; }
+
+    /* Profile */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      background: #FFD700;
+      border-radius: 50%;
+      margin: 0 auto 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .xp-bar {
+      width: 200px;
+      height: 20px;
+      background: #ccc;
+      border-radius: 10px;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+    .xp-bar-inner {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #3B4CCA, #6C8CFF);
+      transition: width 0.5s ease;
+    }
+    .owned-card {
+      width: 100px;
+      height: 140px;
+      background: linear-gradient(135deg, #FF1C1C, #FFA500);
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* Cart */
+    .cart-items {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .cart-items div {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px dashed #ccc;
+    }
+    .checkout-btn {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #FFD700;
+      color: #1A1A1A;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* How to Buy */
+    #howtobuy p { max-width: 600px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="section" id="logo">
+    <div class="pokeball-bag">
+      <div class="pokeball-top"></div>
+      <div class="pokeball-bottom"></div>
+      <div class="pokeball-line"></div>
+      <div class="bag-handle"></div>
+    </div>
+    <h1>Joseph’s Poké Market</h1>
+  </div>
+
+  <!-- Home -->
+  <div class="section" id="home">
+    <h2>Available Pokémon Cards</h2>
+    <div class="carousel">
+      <div class="card" data-name="Charizard VMAX" data-price="120">Charizard VMAX</div>
+      <div class="card" data-name="Pikachu EX" data-price="80">Pikachu EX</div>
+      <div class="card" data-name="Mewtwo GX" data-price="100">Mewtwo GX</div>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <div class="section" id="product">
+    <h2>Selected Card</h2>
+    <div id="selectedCardDisplay">Select a card!</div>
+    <button class="buy" id="buyBtn">Buy Now</button>
+    <button class="trade" id="tradeBtn">Trade Request</button>
+  </div>
+
+  <!-- Profile -->
+  <div class="section" id="profile">
+    <h2>Your Trainer Profile</h2>
+    <div class="avatar">👤</div>
+    <p>Level <span id="playerLevel">1</span> Poké Trader</p>
+    <div class="xp-bar"><div class="xp-bar-inner" id="xpBarInner"></div></div>
+    <p>XP: <span id="currentXP">0</span> / <span id="xpThreshold">100</span></p>
+    <div id="ownedCards"></div>
+  </div>
+
+  <!-- Cart -->
+  <div class="section" id="cart">
+    <h2>Cart</h2>
+    <div class="cart-items" id="cartItems"></div>
+    <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout ⚡</button>
+  </div>
+
+  <!-- How to Buy -->
+  <div class="section" id="howtobuy">
+    <h2>How to Buy 🛒</h2>
+    <p>
+      Click <strong>Buy Now</strong> on any card to email me your order.  
+      I’ll reply with payment details (PayPal or bank transfer).  
+      You can also share this site link with friends or Pokémon trading groups!
+    </p>
+    <p>
+      📧 Email: <strong>albacha.joseph1@gmail.com</strong>  
+    	  <footer>Contact me at albacha.joseph1@gmail.com</footer>
+		  </p>
+  </div>
+	 <script>
+    let cart = [];
+    let owned = [];
+    let selectedCard = null;
+    let tradeMode = false;
+    let playerLevel = 1, currentXP = 0, xpThreshold = 100;
+
+    const xpBar = document.getElementById('xpBarInner');
+    const playerLevelEl = document.getElementById('playerLevel');
+    const currentXPEl = document.getElementById('currentXP');
+    const xpThresholdEl = document.getElementById('xpThreshold');
+    const ownedCardsDiv = document.getElementById('ownedCards');
+    const cartItemsDiv = document.getElementById('cartItems');
+    const selectedCardDisplay = document.getElementById('selectedCardDisplay');
+
+    function updateXPDisplay() {
+      playerLevelEl.textContent = playerLevel;
+      currentXPEl.textContent = currentXP;
+      xpThresholdEl.textContent = xpThreshold;
+      xpBar.style.width = `${(currentXP / xpThreshold) * 100}%`;
+    }
+
+    function addXP(amount) {
+      currentXP += amount;
+      while (currentXP >= xpThreshold) {
+        currentXP -= xpThreshold;
+        playerLevel++;
+        xpThreshold = Math.floor(xpThreshold * 1.5);
+        alert(`🎉 Level Up! You’re now Level ${playerLevel}!`);
+      }
+      updateXPDisplay();
+    }
+
+    function updateOwnedCards() {
+      ownedCardsDiv.innerHTML = '';
+      owned.forEach((card, i) => {
+        const div = document.createElement('div');
+        div.className = 'owned-card';
+        div.textContent = card.name;
+        div.addEventListener('click', () => {
+          if (tradeMode && selectedCard) {
+            const temp = owned[i];
+            owned[i] = selectedCard;
+            selectedCard = temp;
+            alert(`✅ Traded! You got ${owned[i].name}`);
+            tradeMode = false;
+            updateOwnedCards();
+          }
+        });
+        ownedCardsDiv.appendChild(div);
+      });
+    }
+
+    function updateCart() {
+      cartItemsDiv.innerHTML = '';
+      let total = 0;
+      cart.forEach(card => {
+        const div = document.createElement('div');
+        div.innerHTML = `<span>${card.name}</span><span>$${card.price}</span>`;
+        cartItemsDiv.appendChild(div);
+        total += card.price;
+      });
+      if (cart.length > 0) {
+        const totalDiv = document.createElement('div');
+        totalDiv.innerHTML = `<strong>Total</strong><strong>$${total}</strong>`;
+        cartItemsDiv.appendChild(totalDiv);
+      }
+    }
+
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+        selectedCard = { name: card.dataset.name, price: parseInt(card.dataset.price) };
+        selectedCardDisplay.textContent = `${selectedCard.name} - $${selectedCard.price}`;
+      });
+    });
+
+    document.getElementById('buyBtn').addEventListener('click', () => {
+      if (!selectedCard) { alert('Select a card first!'); return; }
+      const email = "albacha.joseph1@gmail.com"; // 🟢 Replace this
+      const subject = encodeURIComponent(`Order Request: ${selectedCard.name}`);
+      const body = encodeURIComponent(`Hello Joseph,\n\nI’d like to buy this card:\n\n${selectedCard.name}\nPrice: $${selectedCard.price}\n\nPlease reply with payment details.\n\nThanks!`);
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    });
+
+    document.getElementById('tradeBtn').addEventListener('click', () => {
+      if (!selectedCard) { alert('Select a card first!'); return; }
+      if (owned.length === 0) { alert('You have no cards to trade!'); return; }
+      tradeMode = true;
+      alert('🔁 Trade mode ON: click one of your owned cards to trade!');
+    });
+
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      if (cart.length === 0) { alert('Your cart is empty!'); return; }
+      let totalXP = 0;
+      cart.forEach(c => totalXP += c.price);
+      addXP(totalXP);
+      alert(`✅ Checkout complete! You earned ${totalXP} XP!`);
+      cart = [];
+      updateCart();
+    });
+updateXPDisplay();
+    updateOwnedCards();
+  </script>
+</body>
+</html>
+
